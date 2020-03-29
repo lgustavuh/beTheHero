@@ -10,7 +10,7 @@ export default StyleSheet.create({
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
     },
 
     headerText:{
@@ -45,6 +45,7 @@ export default StyleSheet.create({
         borderRadius: 8,
         backgroundColor: '#FFF',
         marginBottom: 16,
+        marginTop: 48,
     },
 
     incidentProperty: {
@@ -54,7 +55,6 @@ export default StyleSheet.create({
     },
 
     incidentValue: {
-        marginTop: 8,
         fontSize:15,
         marginBottom: 24,
         color: '#737380',        

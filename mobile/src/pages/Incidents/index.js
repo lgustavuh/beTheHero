@@ -43,7 +43,7 @@ export default function Incidents(){
     }, [])
 
     return(
-        <View styles={styles.container}>
+        <View style={styles.container}>
             <View style={styles.header}>
                 <Image source={logoImg}/>
                 <Text style={styles.headerText}>
@@ -58,7 +58,7 @@ export default function Incidents(){
                 data={incidents}
                 style={styles.incidentList}
                 keyExtractor={incident => String(incident.id)}
-                showsVerticalScrollIndicator={true}
+                showsVerticalScrollIndicator={false}
                 onEndReached={loadIncidents}
                 onEndReachedThreshold={0.2}
                 renderItem={({ item: incident }) => (
